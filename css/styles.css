@@ -1,0 +1,16 @@
+main {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 30px;
+	text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, span {
+  font-family: 'Open Sans', sans-serif;
+}
