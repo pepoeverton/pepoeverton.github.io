@@ -1,0 +1,104 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+  width: 100%;
+  max-width: 90%;
+}
+
+.header-actions__container {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-actions__container button {
+  background: none;
+  cursor: pointer;
+}
+
+.header-avatar__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.content {
+  width: 90%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contact__container a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.footer-contact__container a:hover {
+  background-color: aqua;
+  color: white;
+}
+
+.style-dinossaur__meteor {
+  width: 200px;
+}
+
+.dinossaur-animation {
+  display: none;
+}
+
+.section-animations {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+#dinosaur-1 {
+  height: 180px;
+  position: absolute;
+  left: 5%;
+  bottom: 30px;
+}
+
+#dinosaur-2 {
+  height: 180px;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
