@@ -1,0 +1,24 @@
+{
+  "name": "pepoeverton.github.io",
+  "version": "1.0.0",
+  "description": "This is a simple and small personal webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepoeverton/pepoeverton.github.io.git"
+  },
+  "author": "Everton Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepoeverton/pepoeverton.github.io/issues"
+  },
+  "homepage": "https://github.com/pepoeverton/pepoeverton.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
