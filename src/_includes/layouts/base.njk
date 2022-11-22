@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/public/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-actions__container">
+        <button>light</button>
+      </div>
+      <div>
+        <img
+          class="style-dinossaur__meteor dinossaur-animation"
+          src="/public/assets/ico-meteor.svg"
+          alt=""
+          srcset=""
+        />
+        <div class="header-avatar__container">
+          <img
+            class="avatar"
+            src="/public/assets/avatar.svg"
+            alt="Avatar do Everton Nunes"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      {{ content | safe }}
+    </main>
+    <footer>
+      <img
+        id="dinosaur-1"
+        class="dinossaur-animation"
+        src="/public/assets/ico-dinosaur-1.svg"
+        alt=""
+        srcset=""
+      />
+      <div class="footer">
+        <ul class="footer-contact__container">
+          <li>
+            <a
+              href="https://github.com/pepoeverton"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/everton-ribeiro-nunes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/pepoeverton"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:everton.code@gmail.com"
+              mail
+              target="_blank"
+              rel="noopener noreferrer"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </div>
+      <img
+        id="dinosaur-2"
+        class="dinossaur-animation"
+        src="/public/assets/ico-dinosaur-2.svg"
+        alt=""
+        srcset=""
+      />
+    </footer>
+  </body>
+</html>
