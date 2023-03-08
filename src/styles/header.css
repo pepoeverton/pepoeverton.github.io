@@ -1,0 +1,17 @@
+.header-container {
+  display: flex;
+  min-height: 1.8em;
+  padding: 0.5em;
+  border: 0.5em solid #292b2c;
+  box-shadow: 0.5em 0.5em #0275d8;
+  place-content: center;
+}
+
+/* .header-container {
+  display: inline-grid;
+  min-height: 1.8em;
+  padding: 0.5em;
+  border: 0.12em solid #292b2c;
+  box-shadow: 0.1em 0.1em #0275d8;
+  place-content: center;
+} */
