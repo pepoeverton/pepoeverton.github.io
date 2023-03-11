@@ -1,19 +1,20 @@
+const Image = require('@11ty/eleventy-img');
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/styles/');
+  eleventyConfig.addPassthroughCopy('./src/assets/');
   eleventyConfig.addWatchTarget('./src/styles/');
 
-  // eleventyConfig.setTemplateFormats([
-  //   // Templates:
-  //   'html',
-  //   'njk',
-  //   'md',
-  //   // Static Assets:
-  //   'css',
-  //   'jpeg',
-  //   'jpg',
-  //   'png',
-  //   'svg',
-  // ]);
+  eleventyConfig.addNunjucksAsyncShortcode(
+    'svgIcon',
+    async (src, alt, sizes) => {
+      let metadata = await Image(src, {
+        formats: ['svg'],
+        dryRun: true,
+      });
+      return metadata.svg[0].buffer.toString();
+    }
+  );
 
   return {
     dir: {

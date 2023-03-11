@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -18,32 +18,6 @@ main {
   margin-right: auto;
   margin-left: auto;
   padding: 38px;
-}
-
-/* Header */
-
-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.header-container__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.header-container__info h1 {
-  font-size: 5rem;
-}
-
-.header-container__info p {
-  font-size: 1.2rem;
-}
-
-.header-photo img {
-  width: 100%;
 }
 
 /* Articles and Sections */
@@ -79,25 +53,4 @@ article h2 {
 
 .photos-container img {
   width: 100%;
-}
-
-/* Footer */
-
-.footer {
-  width: 100%;
-  background-color: #292b2c;
-}
-
-.footer > .container {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-contact__links {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-contact__links li:not(:last-of-type) {
-  padding-right: 16px;
 }

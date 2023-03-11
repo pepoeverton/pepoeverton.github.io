@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{ '/styles/reset.css' | url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/styles/style.css' | url }}" />
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/button.css' | url }}" />
     <link rel="stylesheet" type="text/css" href="{{ '/styles/header.css' | url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/styles/footer.css' | url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ '/styles/button.css' | url }}" />
     <title>{{ title }}</title>
   </head>
   <body>
@@ -21,12 +19,56 @@
       <div class="container">
         <div class="header-container">
           <div class="header-container__info">
-            <h1>Everton Nunes</h1>
             <div>
-              <p>Software Engineer</p>
+              <h1>Everton Nunes</h1>
+              <h4>Software Engineer</h4>
               <p>he/his/him</p>
               <p>everton.nunes@proton.me</p>
             </div>
+            <ul class="header-container__social">
+              <li>
+                <a href="/">
+                  {% svgIcon 'src/assets/download.svg' %}
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {% svgIcon 'src/assets/github.svg' %}
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {% svgIcon 'src/assets/twitter.svg' %}
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  {% svgIcon 'src/assets/linkedin.svg' %}
+                </a>
+              </li>
+            </ul>
+            <ul class="header-container__menu">
+              <li>
+                <a href="/">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/projects">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="/setup">
+                  Setup
+                </a>
+              </li>
+              <li>
+                <a href="/photos">
+                  Photos
+                </a>
+              </li>
+            </ul>
           </div>
           <figure class="header-photo">
             <img src="https://pbs.twimg.com/profile_images/1538542889327808512/nl9CDq7G_400x400.jpg" alt="me" />
@@ -36,121 +78,30 @@
       <div></div>
     </header>
     <main>
-      <article id="about">
+      <article>
         <section class="container">
-          <h2>About</h2>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-        </section>
-      </article>
-      <article id="projects">
-        <section class="container">
-          <h2>Projects</h2>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-          <p>Hey I hope you're doing well! So taking advance you're here, I'll try to introduce in a short way, let's go!
-            My name is Everton Nunes dan.. I'm 30 years old and I'm from Brazil (south of Brazil) in a city called Gravatai, besides my basic information, I'd like to say what I like and cool stuff, so I'm a software developer with almost +8 years of experience, I've been working on so many projects, since internal projects as dashboards, order monitor, social network for food, design system, investment platform and finally a food platform and in all of those projects I worked with so many technologies like TypeScript, React, Next.js, MySQL, MongoDB, AWS, Jest, Testing Library and a bunch of others.
-            I really like to work in an environment that I can be myself and feel free to be taught and teach someone, in other words, in a environment without ego and some hero syndrome.
-          </p>
-        </section>
-      </article>
-      <article id="side-stuff">
-        <section id="photos" class="container">
-          <h2>Photos</h2>
-          <div class="photos-container">
-
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <img alt="Sun" src="https://images.unsplash.com/photo-1534815215632-22670bc39eed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80">
-              </picture>
-            </div>
-          </div>
-        </section>
-        <section id="draws">
-
-        </section>
+          {{ content | safe }}
+        </section>  
       </article>
     </main>
     <footer class="footer">
       <div class="footer-contact container">
-        <ul class="footer-contact__links">
+        <ul class="footer-contact__social">
           <li>
-            <a
-              href="https://github.com/pepoeverton"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-primary btn-light"
-              >Github</a
-            >
+            <a href="https://github.com/pepoeverton">
+              {% svgIcon 'src/assets/github.svg' %}
+            </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/everton-ribeiro-nunes/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-primary btn-light"
-              >LinkedIn</a
-            >
+            <a href="https://twitter.com/pepoeverton">
+              {% svgIcon 'src/assets/twitter.svg' %}
+
+            </a>
           </li>
           <li>
-            <a
-              href="https://twitter.com/pepoeverton"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-primary btn-light"
-              >Twitter</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:everton.code@gmail.com"
-              mail
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-primary btn-light"
-              >Email</a
-            >
+            <a href="https://www.linkedin.com/in/everton-ribeiro-nunes">
+              {% svgIcon 'src/assets/linkedin.svg' %}
+            </a>
           </li>
         </ul>
       </div>

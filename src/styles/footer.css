@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  background-color: #292b2c;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-contact__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-contact__social svg path {
+  stroke: #d9d9d9;
+}
+
+.footer-contact__social a:hover svg path {
+  stroke: #9a9898;
+}
