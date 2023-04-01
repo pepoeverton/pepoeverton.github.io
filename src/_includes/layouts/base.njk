@@ -4,14 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/reset.css' | url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/style.css' | url }}" />
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/header.css' | url }}" />
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/footer.css' | url }}" />
-    <link rel="stylesheet" type="text/css" href="{{ '/styles/button.css' | url }}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/reset.css' | url }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/style.css' | url }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/header.css' | url }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/footer.css' | url }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/button.css' | url }}"
+    />
     <title>{{ title }}</title>
   </head>
   <body>
@@ -27,51 +50,49 @@
             </div>
             <ul class="header-container__social">
               <li>
-                <a href="/">
+                <a target="_blank" href="/">
                   {% svgIcon 'src/assets/download.svg' %}
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a target="_blank" href="https://github.com/pepoeverton">
                   {% svgIcon 'src/assets/github.svg' %}
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a target="_blank" href="https://twitter.com/pepoeverton">
                   {% svgIcon 'src/assets/twitter.svg' %}
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/everton-ribeiro-nunes"
+                >
                   {% svgIcon 'src/assets/linkedin.svg' %}
                 </a>
               </li>
             </ul>
             <ul class="header-container__menu">
               <li>
-                <a href="/">
-                  About
-                </a>
+                <a href="/"> About </a>
               </li>
+              {# <li>
+                <a href="/projects"> Projects </a>
+              </li> #}
               <li>
-                <a href="/projects">
-                  Projects
-                </a>
+                <a href="/setup"> Setup </a>
               </li>
-              <li>
-                <a href="/setup">
-                  Setup
-                </a>
-              </li>
-              <li>
-                <a href="/photos">
-                  Photos
-                </a>
-              </li>
+              {# <li>
+                <a href="/photos"> Photos </a>
+              </li> #}
             </ul>
           </div>
           <figure class="header-photo">
-            <img src="https://pbs.twimg.com/profile_images/1538542889327808512/nl9CDq7G_400x400.jpg" alt="me" />
+            <img
+              src="https://pbs.twimg.com/profile_images/1538542889327808512/nl9CDq7G_400x400.jpg"
+              alt="me"
+            />
           </figure>
         </div>
       </div>
@@ -79,27 +100,29 @@
     </header>
     <main>
       <article>
-        <section class="container">
+        <section class="container text-container">
           {{ content | safe }}
-        </section>  
+        </section>
       </article>
     </main>
     <footer class="footer">
       <div class="footer-contact container">
         <ul class="footer-contact__social">
           <li>
-            <a href="https://github.com/pepoeverton">
+            <a target="_blank" href="https://github.com/pepoeverton">
               {% svgIcon 'src/assets/github.svg' %}
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/pepoeverton">
+            <a target="_blank" href="https://twitter.com/pepoeverton">
               {% svgIcon 'src/assets/twitter.svg' %}
-
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/everton-ribeiro-nunes">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/everton-ribeiro-nunes"
+            >
               {% svgIcon 'src/assets/linkedin.svg' %}
             </a>
           </li>

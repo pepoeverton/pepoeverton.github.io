@@ -20,19 +20,17 @@ main {
   padding: 38px;
 }
 
+.text-container p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 /* Articles and Sections */
 article {
   width: 100%;
   height: auto;
 }
 
-#about {
-  /* border-top: 2px dashed #292b2c; */
-}
-
-#side-stuff {
-  /* display: none; */
-}
 
 section h2,
 article h2 {

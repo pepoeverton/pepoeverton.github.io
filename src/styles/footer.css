@@ -3,9 +3,14 @@
   background-color: #292b2c;
 }
 
+.footer ul {
+  padding: 0px;
+  list-style: none;
+}
+
 .footer > .container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer-contact__social {
@@ -19,4 +24,10 @@
 
 .footer-contact__social a:hover svg path {
   stroke: #9a9898;
+}
+
+@media(min-width: 768px) {
+    .footer > .container {
+        justify-content: flex-end
+    }
 }

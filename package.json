@@ -1,7 +1,7 @@
 {
-  "name": "pepoeverton.github.io",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "This is a simple and small personal webpage",
+  "description": "This is a simple and small personal website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

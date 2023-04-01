@@ -5,19 +5,29 @@ header {
   background: #d9d9d9;
 }
 
+header ul {
+  list-style: none;
+  padding: 0px;
+}
+
 .header-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-container__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .header-container__info h1 {
   font-size: 36px;
+  margin-bottom: 16px;
 }
 
 .header-container_info h4 {
@@ -48,6 +58,7 @@ header {
 .header-container__menu {
   display: flex;
   gap: 20px;
+  margin: 12px 0px;
 }
 
 .header-container__social a:hover svg path {
@@ -61,4 +72,15 @@ header {
 
 .header-container__menu a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 668px) {
+  .header-container {
+    flex-direction: row;
+  }
+  .header-container__info {
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
