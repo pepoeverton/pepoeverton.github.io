@@ -17,7 +17,7 @@ main {
   max-width: 100ch;
   margin-right: auto;
   margin-left: auto;
-  padding: 38px;
+  padding: var(--space-md-1);
 }
 
 .text-container p {
@@ -30,7 +30,6 @@ article {
   width: 100%;
   height: auto;
 }
-
 
 section h2,
 article h2 {
@@ -51,4 +50,10 @@ article h2 {
 
 .photos-container img {
   width: 100%;
+}
+
+@media (min-width: 668px) {
+  .container {
+    padding: var(--space-md-2);
+  }
 }

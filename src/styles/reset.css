@@ -7,9 +7,12 @@ body {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  color: var(--color-text);
+  background: var(--color-body);
 }
 
 * {
   border: none;
   box-sizing: border-box;
+  margin: 0px;
 }

@@ -9,6 +9,11 @@
       type="text/css"
       href="{{ '/styles/reset.css' | url }}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/styles/variables.css' | url }}"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +38,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{{ '/styles/button.css' | url }}"
+      href="{{ '/styles/toggle.css' | url }}"
     />
     <title>{{ title }}</title>
   </head>
@@ -77,15 +82,19 @@
               <li>
                 <a href="/"> About </a>
               </li>
-              {# <li>
-                <a href="/projects"> Projects </a>
-              </li> #}
+              {#
               <li>
-                <a href="/setup"> Setup </a>
+                <a href="/projects"> Projects </a>
               </li>
+              #}
               {# <li>
-                <a href="/photos"> Photos </a>
+                <a href="/setup"> Setup </a>
               </li> #}
+              {#
+              <li>
+                <a href="/photos"> Photos </a>
+              </li>
+              #}
             </ul>
           </div>
           <figure class="header-photo">
@@ -96,7 +105,12 @@
           </figure>
         </div>
       </div>
-      <div></div>
+      <div class="toggle-container">
+        <label class="toggle">
+          <input id="toggle-theme" type="checkbox">
+          <span class="toggle-round"></span>
+        </label>
+      </div>
     </header>
     <main>
       <article>
@@ -130,4 +144,5 @@
       </div>
     </footer>
   </body>
+  <script src="{{ '/scripts/theme.js' | url }}"></script>
 </html>

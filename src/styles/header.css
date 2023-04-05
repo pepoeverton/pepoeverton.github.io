@@ -2,7 +2,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #d9d9d9;
+  background: var(--color-primary);
+  flex-direction: column-reverse;
 }
 
 header ul {
@@ -61,13 +62,17 @@ header ul {
   margin: 12px 0px;
 }
 
+.header-container__social a svg path {
+  stroke: var(--color-icon-header-default);
+}
+
 .header-container__social a:hover svg path {
-  stroke: #9a9898;
+  stroke: var(--color-icon-header-hover);
 }
 
 .header-container__menu a {
   text-decoration: none;
-  color: black;
+  color: var(--color-text);
 }
 
 .header-container__menu a:hover {
@@ -75,6 +80,9 @@ header ul {
 }
 
 @media (min-width: 668px) {
+  header {
+    flex-direction: row;
+  }
   .header-container {
     flex-direction: row;
   }
