@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background-color: var(--color-secondary);
+}
+
+.footer ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contact__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-contact__social a svg path {
+  stroke: var(--color-icon-footer-default);
+}
+
+.footer-contact__social a:hover svg path {
+  stroke: var(--color-icon-footer-hover);
+}
+
+@media(min-width: 768px) {
+    .footer > .container {
+        justify-content: flex-end
+    }
+}
