@@ -1,9 +1,6 @@
 header {
   width: 100%;
-  display: flex;
-  justify-content: center;
   background: var(--color-primary);
-  flex-direction: column-reverse;
 }
 
 header ul {
@@ -13,6 +10,7 @@ header ul {
 
 .header-container {
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .header-content {
@@ -85,10 +83,7 @@ header ul {
 }
 
 @media (min-width: 668px) {
-  header {
-    flex-direction: row;
-  }
-  .header-content {
+  .header-content, .header-container {
     flex-direction: row;
   }
   .header-content__info {
