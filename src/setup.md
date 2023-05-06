@@ -64,3 +64,7 @@ I use a variety of apps to make my work and personal life more productive and ef
 - [Obsidian](https://obsidian.md/) is my latest addition. I use it to track my daily tasks, studies, and other simple things.
 
 That's all for now, I may have missed something but I'll continue to add and update this list over time. Thank you for reading this far. I hope you found this information helpful.
+
+**Nowadays, my setup looks like this:**
+
+> ![Setup](../assets/images/setup.jpg)

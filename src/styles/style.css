@@ -35,6 +35,10 @@ main {
   font-weight: 600;
 }
 
+.text-container img {
+  width: 100%;
+}
+
 /* Articles and Sections */
 article {
   width: 100%;
