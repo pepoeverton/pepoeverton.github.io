@@ -40,7 +40,7 @@ Hey folks, I've always been a person who likes cool setups with nice devices and
 
 - [iPad 7th Gen + Apple Pencil](https://www.apple.com/ipad-10.2/): Since I was a kid I liked cartoons, anime and any kind of visual art and for these reasons I always had a little affinity for drawing so I basically use this iPad for that, I still plan to invest more time and effort in it and maybe create a section on this site with my drawings.
 
-- [Nintendo Switch](https://www.nintendo.com/switch/): I've always been a PlayStation fan haha ​​and when I bought the switch I thought I would end up getting bored or that the games wouldn't please me but it's amazing how Nintendo games are for all ages and super fun I would say this console it is the best console to play with friends and with your partner.
+- [Nintendo Switch](https://www.nintendo.com/switch/): I've always been a PlayStation fan haha ​​and when I bought the switch I thought I would end up getting bored or the games wouldn't please me but it's amazing how Nintendo games are for all ages and super fun I would say this console it is the best console to play with friends and with your partner.
 
 ### Apps
 
