@@ -82,8 +82,13 @@ header ul {
   text-decoration: underline;
 }
 
+.header-content__menu a[aria-current] {
+  text-decoration: underline;
+}
+
 @media (min-width: 668px) {
-  .header-content, .header-container {
+  .header-content,
+  .header-container {
     flex-direction: row;
   }
   .header-content__info {

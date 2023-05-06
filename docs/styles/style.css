@@ -22,7 +22,17 @@ main {
 
 .text-container p {
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: var(--space-sm-1);
+}
+
+.text-container li {
+  margin-bottom: var(--space-sm-1);
+}
+
+.text-container a {
+  text-decoration: underline;
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 /* Articles and Sections */
@@ -37,7 +47,7 @@ article h2 {
 }
 
 .photos-container {
-  padding-top: 20px;
+  padding-top: var(--space-md-1);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }

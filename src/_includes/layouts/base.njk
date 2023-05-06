@@ -79,22 +79,18 @@
               </li>
             </ul>
             <ul class="header-content__menu">
+              {% for item in menu %}
+                {% if item.link == page.url %}
+                  {% set current = 'aria-current="page"' %}
+                {% else %}
+                  {% set current = ''%} 
+                {% endif %}
               <li>
-                <a href="/"> About </a>
+                <a href="{{ item.link }}" {{ current | safe }}>
+                  {{ item.title }}
+                </a>
               </li>
-              {#
-              <li>
-                <a href="/projects"> Projects </a>
-              </li>
-              #}
-              {# <li>
-                <a href="/setup"> Setup </a>
-              </li> #}
-              {#
-              <li>
-                <a href="/photos"> Photos </a>
-              </li>
-              #}
+              {% endfor %}
             </ul>
           </div>
           <figure class="header-photo">
@@ -106,7 +102,7 @@
         </div>
         <div class="toggle-container">
           <label class="toggle">
-            <input id="toggle-theme" type="checkbox">
+            <input id="toggle-theme" type="checkbox" />
             <span class="toggle-round"></span>
           </label>
         </div>
