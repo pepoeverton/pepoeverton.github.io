@@ -17,3 +17,11 @@ toggleButton.addEventListener('click', () => {
 
   localStorage.setItem('theme', defaultTheme);
 });
+
+// Setting the theme previously selected by the user
+document.addEventListener('DOMContentLoaded', () => {
+  // Inject the value from localStorage into the toggleButton
+  if (toggleButton) {
+    toggleButton.checked = defaultTheme === 'dark' ? true : false;
+  }
+});
